@@ -23,7 +23,7 @@ public class Dashboard {
 
 		Navigation.Dashboard();
 		
-//		Stage.Dashboard();
+		Stage.Dashboard();
 	}
 
 }

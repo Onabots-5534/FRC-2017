@@ -24,12 +24,12 @@ public class Autopilot {
 	
 	public static void MinimumDrivePower() {
 		if ( LastPowerD < 0 ) { LastPowerD = Math.min( -Settings.MinimumDrivePower, LastPowerD ); }
-		if ( LastPowerD > 0 ) { LastPowerD = Math.min( +Settings.MinimumDrivePower, LastPowerD ); }
+		if ( LastPowerD > 0 ) { LastPowerD = Math.max( +Settings.MinimumDrivePower, LastPowerD ); }
 	}
 
 	public static void MinimumTurnPower() {
 		if ( LastPowerT < 0 ) { LastPowerT = Math.min( -Settings.MinimumDrivePower, LastPowerT ); }
-		if ( LastPowerT > 0 ) { LastPowerT = Math.min( +Settings.MinimumDrivePower, LastPowerT ); }
+		if ( LastPowerT > 0 ) { LastPowerT = Math.max( +Settings.MinimumDrivePower, LastPowerT ); }
 	}
 
 	// ===

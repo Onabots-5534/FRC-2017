@@ -89,9 +89,9 @@ public class Stage {
 	
 	
 	public static void StopNearFrontSurface( double Range, double tolerance ) {
-//		if ( Math.abs(Navigation.GetFrontRange()-Range) > tolerance ) { ReadyToAdvance = false; } else {
-//			Drivetrain.Stop();
-//		}
+		if ( Math.abs(Navigation.GetFrontRange()-Range) > tolerance ) { ReadyToAdvance = false; } else {
+			Drivetrain.Stop();
+		}
 	}
 	
 	
@@ -108,9 +108,9 @@ public class Stage {
 
 	
 	public static void StopNearHeading( double heading, double tolerance ) {
-//		if ( Math.abs(Navigation.GetDelta(heading)) > tolerance ) { ReadyToAdvance = false; } else {
-//			Drivetrain.Stop();
-//		}
+		if ( Math.abs(Navigation.GetDelta(heading)) > tolerance ) { ReadyToAdvance = false; } else {
+			Drivetrain.Stop();
+		}
 	}
 
 	

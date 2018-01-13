@@ -21,6 +21,7 @@ public class Navigation {
 
 	
 	public static void Reset() {
+		Gyroscope.calibrate();
 //		DriveEncoderL.reset();
 		DriveEncoderR.reset();
 		Gyroscope.reset();

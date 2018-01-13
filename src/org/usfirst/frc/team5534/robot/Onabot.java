@@ -9,7 +9,7 @@ public class Onabot {
 		
 //		Lift.Init();
 		
-//		Navigation.Init();
+		Navigation.Init();
 	}
 
 
@@ -17,14 +17,14 @@ public class Onabot {
 //		Climber.Periodic();
 		
 		Dashboard.Periodic();
-		
+
 		Drivetrain.Periodic();
-		
+
 //		Lift.Periodic();
 		
 		Navigation.Periodic();
 		
-//		Telemetry.Periodic();
+		Telemetry.Periodic();
 	}
 	
 }
