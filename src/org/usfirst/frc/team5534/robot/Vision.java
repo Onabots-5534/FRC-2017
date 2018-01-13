@@ -19,12 +19,12 @@ public class Vision {
     
     public static NetworkTableInstance NTI = NetworkTableInstance.getDefault();
     public static NetworkTable VisionTable = NTI.getTable("Vision");
-    
-    
+  
+ 
     public static void Periodic() {
     }
 
-    
+
     public static void Dashboard() {
     	SmartDashboard.putNumber( "Target Score",  GetTargetScore() );
     	SmartDashboard.putNumber( "Target X",      GetTargetX()     );
