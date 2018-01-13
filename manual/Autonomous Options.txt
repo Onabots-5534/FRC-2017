@@ -1,0 +1,137 @@
+TODO
+====
+
+[X] Install firmware in roborio
+
+[X] Install software in radio
+
+[X] Upgrade driver station
+
+
+Test code on old robot
+
+Inventory of sensors
+
+Lift / claw actuators
+
+Make encoder pwm cables
+
+
+
+
+
+
+NOTES
+=====
+
+* Make level robot. A front-to-back rock in the robot will be amplified at a height
+  of six feet. How much? No signs on rocking robot. Consider hard wheels and omni.
+
+* Lift mechanism. A couple of arms with a single pivot point. Mostly vertical lift.
+  Hard to tell if cascading or continuous lifts.
+
+  Other research indicates a slight preference for cascade for stability - no one
+  segment is at full extension.
+
+  Include a take-up reel for downward motion instead of gravity.
+
+  Chain, steel cable, line?
+
+* Drivetrain. No mecanum yet. More 4 wheel than six. No mention of 3/4" bump in plans.
+
+* Intake. So far no claws, only rollers.
+
+  One ri3d discussed tipped cube issue and ripping fabric.
+
+* Exhaust: one team discussed pneumatic kicker plate, others using rollers.
+
+* Various Ri3D seem to be downplaying climbing. Have mentioned possibility of other
+  teams hanings.
+ 
+* Apparent consensus on defined roles. Climb/hang/scale vs switch/exchange.
+
+* Locate battery (and gear boxes?) toward the back for counter weight to lift in front.
+
+* Ensure Auto-Quest completion: 3 robots crossing line and ownership of switch
+
+* Consider rollers instead of claw. Youtube video showing that it collected the cube
+  diagonally. Unsure about how well it held it.
+
+* Combination of intake rollers and pneumatic claw - best of both worlds?
+  
+
+There are a large number of autonomous routines that can be used depending
+upon the starting location and field configuration. 
+
+Starting Location:
+- Left
+- Center
+- Right
+
+Each of these can have have one of the following maps.
+- Cross baseline
+- Do nothing
+
+Preference is selected between switch and scale. Each of the these can be
+in one of two configurations.
+
+
+Sonic ranger placed at bottom of robot to detect switch and base of scale
+
+Sonic ranger placed at back of robot to determine distance from field edge
+
+
+
+
+
+SENSORS
+=======
+
+Drivetrain
+- 4 spark
+
+Navigation
+- 2 encoders (maybe 1)
+- 1 gyroscope
+- 2 sonic ranger
+
+BumpDetector
+- 1 limit switch (maybe 0)
+
+Climber
+- 1 spark
+- 1 limit switch (maybe 0)
+- 1 encoder (maybe 0)
+
+Lift
+- 1 spark (maybe 2)
+- 2 limit switch (maybe 0)
+- 1 encoder
+
+Claw
+- 1 sonic ranger (maybe 0)
+- 1 double solenoid (maybe 0)
+
+Kicker
+- 1 double solenoid (or 2 spark)
+
+
+
+	the bump detector would function as a limit switch that sets a varible when
+	contacted. even better, it remains set so as to not miss the bump. Combined with a
+	sonic ranger on the back, we should be able to position on the scale. Hopefully no
+	bumping into an opponent robot doing the same thing.
+	
+	Consider making a vision system that looks for the color of the blocks on the bottom
+	of the scale. not sure if this would be remotely useful since the base is parallel
+	to the scale
+	
+	in fact, not sure if vision will be of any use at all
+
+	
+
+QUESTIONS
+=========
+
+Can we move into the null zone during autonomous?
+
