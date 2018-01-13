@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.Joystick;
 public class Operator {
 
 	public static Joystick DriveStickL = new Joystick( Ports.USB_DriveStickL );
-	public static Joystick DriveStickR = new Joystick( Ports.USB_DriveStickR );
+//	public static Joystick DriveStickR = new Joystick( Ports.USB_DriveStickR );
 	
 	public static void Init() {
 

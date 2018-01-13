@@ -34,7 +34,7 @@ public class Telemetry {
 	public static void Open() {
 		file.delete();
 		initialTime = System.currentTimeMillis();
-		try { pw = new PrintWriter( file ); } catch (IOException ioe) {}
+		try { pw = new PrintWriter( file ); } catch (IOException ioe) { }
 	}
 
 	
