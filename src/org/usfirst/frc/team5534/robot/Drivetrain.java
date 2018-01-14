@@ -12,8 +12,8 @@ public class Drivetrain {
 	
 	public static double PowerL = 0;
 	public static double PowerR = 0;
-	
-	
+
+
 	public static void Init() {
 		DriveMotorRF.setInverted( true );
 		DriveMotorRR.setInverted( true );
@@ -25,13 +25,13 @@ public class Drivetrain {
 		DriveMotorLR.set( PowerL ); DriveMotorRR.set( PowerR );
 	}
 
-	
+
 	public static void Dashboard() {
 		SmartDashboard.putNumber( "Power L", PowerL  );
 		SmartDashboard.putNumber( "Power R", PowerR  );
 	}
-	
-	
+
+
 	public static String Telemetry() {
 		String result = "";
 		result += "PowerL:" + PowerL + ";";

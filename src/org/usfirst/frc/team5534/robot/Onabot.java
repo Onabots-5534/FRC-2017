@@ -8,7 +8,7 @@ public class Onabot {
 		Drivetrain.Init();
 		
 //		Lift.Init();
-		
+
 		Navigation.Init();
 	}
 
