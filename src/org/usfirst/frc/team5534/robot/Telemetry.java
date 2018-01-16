@@ -7,11 +7,25 @@ import java.io.PrintWriter;
 
 public class Telemetry {
 
-	public static PrintWriter pw          = null;
-	public static File        file        = new File("/home/lvuser/data.txt");
-	public static long        initialTime = 0;
+	public static String      directorySrc = "/home/lvuser/";
+	public static String      fileName     = "onabot-telemetry-data.txt";
+	public static PrintWriter pw           = null;
+	public static File        file         = new File( directorySrc + fileName );
+	public static long        initialTime  = 0;
 	
-
+	
+	public static void Init() {
+		if ( pw != null ) {
+			String result = "Timestamp ";
+			result += Drivetrain.TelemetryHead();
+			result += Navigation.TelemetryHead();
+			result += Stage.TelemetryHead();
+			result += Vision.TelemetryHead();
+			pw.print( result + "\n" );
+		}
+	}
+	
+	
 	public static void Periodic() {
 		if ( pw != null ) {
 			
@@ -19,11 +33,11 @@ public class Telemetry {
 
 //			result += Claw.Telemetry();
 //			result += Climber.Telemetry();
-			result += Drivetrain.Telemetry();
+			result += Drivetrain.TelemetryData();
 //			result += Lift.Telemetry();
-			result += Navigation.Telemetry();
-			result += Stage.Telemetry();
-			result += Vision.Telemetry();
+			result += Navigation.TelemetryData();
+			result += Stage.TelemetryData();
+			result += Vision.TelemetryData();
 
 			pw.print( result + "\n" );
 
@@ -34,14 +48,21 @@ public class Telemetry {
 	public static void Open() {
 		file.delete();
 		initialTime = System.currentTimeMillis();
-		try { pw = new PrintWriter( file ); } catch (IOException ioe) { }
+		try {
+			pw = new PrintWriter( file ); Init(); } catch (IOException ioe) { }
 	}
 
 	
 	public static void Close() {
-		if ( pw != null ) {	pw.close(); pw = null; }
+		if ( pw != null ) { pw.close(); pw = null; }
 	}
 
+
+//	public static void Send() throws IOException {
+//		String command = "scp " + directorySrc + fileName + " pi@10.55.34.83/home/pi/" + fileName;
+//		java.lang.Runtime.getRuntime().exec( command );
+//	}
+	
 	
 	public static String Timestamp() {
 		return "Timestamp:" + System.currentTimeMillis() + ";";

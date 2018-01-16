@@ -31,12 +31,21 @@ public class Vision {
     	SmartDashboard.putNumber( "Target Y",      GetTargetY()     );
     }
 
-
-    public static String Telemetry() {
+    
+    public static String TelemetryHead() {
     	String result = "";
-    	result += "TargetScore:" + GetTargetScore() + ";";
-    	result += "TargetX:"     + GetTargetX()     + ";";
-    	result += "TargetY:"     + GetTargetY()     + ";";
+    	result += "TargetScore,";
+    	result += "TargetX,";
+    	result += "TargetY,";
+    	return result;
+    }
+
+    
+    public static String TelemetryData() {
+    	String result = "";
+    	result += GetTargetScore() + ",";
+    	result += GetTargetX()     + ",";
+    	result += GetTargetY()     + ",";
     	return result;
     }
     

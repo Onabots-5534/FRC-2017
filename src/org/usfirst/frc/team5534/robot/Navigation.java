@@ -7,11 +7,12 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Navigation {
 
-	
+
 	public static void Init() {
 //		DriveEncoderL.reset(); DriveEncoderL.setDistancePerPulse( Settings.DriveEcoderRatio );
 		DriveEncoderR.reset(); DriveEncoderR.setDistancePerPulse( Settings.DriveEcoderRatio );
 		Gyroscope.calibrate();
+		Gyroscope.reset();
 	}
 	
 	
@@ -36,15 +37,27 @@ public class Navigation {
 //		SmartDashboard.putNumber( "Back Range",  GetBackRange()  );
 	}
 
-
-	public static String Telemetry() {
+	
+	public static String TelemetryHead() {
 		String result = "";
-		result += "Heading:"     + GetDirection()  + ";";
-		result += "Distance:"    + GetDistance()   + ";";
-		result += "Drive Speed:" + GetDriveSpeed() + ";";
-		result += "Turn Speed:"  + GetTurnSpeed()  + ";";
-		result += "Front Range:" + GetFrontRange() + ";";
-//		result += "Back Range:"  + GetBackRange()  + ";";
+		result += "Heading,";
+		result += "Distance,";
+		result += "DriveSpeed,";
+		result += "TurnSpeed,";
+		result += "FrontRange,";
+//		result += "BackRange,";
+		return result;
+	}
+
+	
+	public static String TelemetryData() {
+		String result = "";
+		result += GetDirection()  + ",";
+		result += GetDistance()   + ",";
+		result += GetDriveSpeed() + ",";
+		result += GetTurnSpeed()  + ",";
+		result += GetFrontRange() + ",";
+//		result += GetBackRange()  + ",";
 		return result;
 	}
 

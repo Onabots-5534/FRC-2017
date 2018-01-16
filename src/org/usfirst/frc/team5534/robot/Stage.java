@@ -27,10 +27,18 @@ public class Stage {
 	}
 	
 	
-	public static String Telemetry() {
+	public static String TelemetryHead() {
 		String result = "";
-		result += "Stage Number:"   + Number             + ";";
-		result += "Stage Distance:" + GetStageDistance() + ";";
+		result += "StageNumber,";
+		result += "StageDistance,";
+		return result;
+	}
+	
+	
+	public static String TelemetryData() {
+		String result = "";
+		result += Number             + ",";
+		result += GetStageDistance() + ",";
 		return result;
 	}
 		

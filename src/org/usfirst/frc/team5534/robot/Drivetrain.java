@@ -31,11 +31,19 @@ public class Drivetrain {
 		SmartDashboard.putNumber( "Power R", PowerR  );
 	}
 
-
-	public static String Telemetry() {
+	
+	public static String TelemetryHead() {
 		String result = "";
-		result += "PowerL:" + PowerL + ";";
-		result += "PowerR:" + PowerR + ";";
+		result += "PowerL,";
+		result += "PowerR, ";
+		return result;
+	}
+
+	
+	public static String TelemetryData() {
+		String result = "";
+		result += PowerL + ",";
+		result += PowerR + ",";
 		return result;
 	}
 

@@ -15,7 +15,7 @@ public class Pilot {
 	public static void Steensma() {
 		Joystick DriveStick = Operator.DriveStickL;
 		double PowerD = -DriveStick.getY();
-		double PowerT = +DriveStick.getX() / 3;
+		double PowerT = +DriveStick.getTwist() / 3;
 		Drivetrain.DriveArcade( PowerD,  PowerT );
 
 		if ( DriveStick.getRawButton(2) ) {

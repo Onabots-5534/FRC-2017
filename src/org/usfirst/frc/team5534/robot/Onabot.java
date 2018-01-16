@@ -3,6 +3,7 @@ package org.usfirst.frc.team5534.robot;
 public class Onabot {
 
 	public static void Init() {
+
 //		Climber.Init();
 		
 		Drivetrain.Init();
@@ -10,6 +11,7 @@ public class Onabot {
 //		Lift.Init();
 
 		Navigation.Init();
+
 	}
 
 
@@ -25,6 +27,7 @@ public class Onabot {
 		Navigation.Periodic();
 		
 		Telemetry.Periodic();
+		
 	}
 	
 }

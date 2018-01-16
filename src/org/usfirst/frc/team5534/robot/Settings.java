@@ -12,7 +12,7 @@ public class Settings {
 	
 	public static final double DriveEcoderRatio = 0.009523;
 
-	public static final double MinimumDrivePower = 0.17;
+	public static final double MinimumDrivePower = 0.15;
 
 	
 	public static final double LiftEncoderRatio = 0.009523;
