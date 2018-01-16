@@ -34,16 +34,16 @@ public class Drivetrain {
 	
 	public static String TelemetryHead() {
 		String result = "";
-		result += "PowerL,";
-		result += "PowerR, ";
+		result += "PowerL ";
+		result += "PowerR ";
 		return result;
 	}
 
 	
 	public static String TelemetryData() {
 		String result = "";
-		result += PowerL + ",";
-		result += PowerR + ",";
+		result += PowerL + " ";
+		result += PowerR + " ";
 		return result;
 	}
 

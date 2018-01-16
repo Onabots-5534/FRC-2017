@@ -8,7 +8,7 @@ public class Onabot {
 		
 		Drivetrain.Init();
 		
-//		Lift.Init();
+		Lift.Init();
 
 		Navigation.Init();
 
@@ -22,7 +22,7 @@ public class Onabot {
 
 		Drivetrain.Periodic();
 
-//		Lift.Periodic();
+		Lift.Periodic();
 		
 		Navigation.Periodic();
 		

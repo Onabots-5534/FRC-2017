@@ -8,12 +8,12 @@ import java.io.PrintWriter;
 public class Telemetry {
 
 	public static String      directorySrc = "/home/lvuser/";
-	public static String      fileName     = "onabot-telemetry-data.txt";
+	public static String      fileName     = "onabots-telemetry-data.txt";
 	public static PrintWriter pw           = null;
 	public static File        file         = new File( directorySrc + fileName );
 	public static long        initialTime  = 0;
-	
-	
+
+
 	public static void Init() {
 		if ( pw != null ) {
 			String result = "Timestamp ";
@@ -24,8 +24,8 @@ public class Telemetry {
 			pw.print( result + "\n" );
 		}
 	}
-	
-	
+
+
 	public static void Periodic() {
 		if ( pw != null ) {
 			
@@ -43,16 +43,15 @@ public class Telemetry {
 
 		}		
 	}
-	
-	
+
+
 	public static void Open() {
 		file.delete();
 		initialTime = System.currentTimeMillis();
-		try {
-			pw = new PrintWriter( file ); Init(); } catch (IOException ioe) { }
+		try { pw = new PrintWriter( file ); Init(); } catch (IOException ioe) { }
 	}
 
-	
+
 	public static void Close() {
 		if ( pw != null ) { pw.close(); pw = null; }
 	}
@@ -62,10 +61,10 @@ public class Telemetry {
 //		String command = "scp " + directorySrc + fileName + " pi@10.55.34.83/home/pi/" + fileName;
 //		java.lang.Runtime.getRuntime().exec( command );
 //	}
-	
-	
+
+
 	public static String Timestamp() {
-		return "Timestamp:" + System.currentTimeMillis() + ";";
+		return (System.currentTimeMillis() - initialTime) + " ";
 	}
 
 }

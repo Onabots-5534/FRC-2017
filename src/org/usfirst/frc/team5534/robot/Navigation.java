@@ -40,24 +40,24 @@ public class Navigation {
 	
 	public static String TelemetryHead() {
 		String result = "";
-		result += "Heading,";
-		result += "Distance,";
-		result += "DriveSpeed,";
-		result += "TurnSpeed,";
-		result += "FrontRange,";
-//		result += "BackRange,";
+		result += "Heading ";
+		result += "Distance ";
+		result += "DriveSpeed ";
+		result += "TurnSpeed ";
+		result += "FrontRange ";
+//		result += "BackRange ";
 		return result;
 	}
 
 	
 	public static String TelemetryData() {
 		String result = "";
-		result += GetDirection()  + ",";
-		result += GetDistance()   + ",";
-		result += GetDriveSpeed() + ",";
-		result += GetTurnSpeed()  + ",";
-		result += GetFrontRange() + ",";
-//		result += GetBackRange()  + ",";
+		result += GetDirection()  + " ";
+		result += GetDistance()   + " ";
+		result += GetDriveSpeed() + " ";
+		result += GetTurnSpeed()  + " ";
+		result += GetFrontRange() + " ";
+//		result += GetBackRange()  + " ";
 		return result;
 	}
 

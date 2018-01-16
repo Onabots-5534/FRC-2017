@@ -1,14 +1,51 @@
 package org.usfirst.frc.team5534.robot;
 
-//import edu.wpi.first.wpilibj.DigitalInput;
-//import edu.wpi.first.wpilibj.DoubleSolenoid;
-//import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
-//import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-//import edu.wpi.first.wpilibj.Encoder;
-//import edu.wpi.first.wpilibj.Spark;
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.Spark;
 
 public class Lift {
 
+	public static DoubleSolenoid GearGrab = new DoubleSolenoid(
+		Ports.PCM_GearGrab[0],
+		Ports.PCM_GearGrab[1]
+	);
+
+	
+	public static DoubleSolenoid GearLift = new DoubleSolenoid(
+		Ports.PCM_GearLift[0],
+		Ports.PCM_GearLift[1]
+	);
+	
+	
+	public static Value GrabState = DoubleSolenoid.Value.kOff;
+	public static Value LiftState = DoubleSolenoid.Value.kOff;
+	
+	
+	public static void Init() {
+		Drop();
+		Raise();
+	}
+	
+	
+	public static void Periodic() {
+		GearGrab.set( GrabState );
+		GearLift.set( LiftState );
+	}
+
+
+	public static void Grab() { GrabState = DoubleSolenoid.Value.kForward; }
+	
+	public static void Drop() { GrabState = DoubleSolenoid.Value.kReverse; }
+	
+	public static void Raise() { LiftState = DoubleSolenoid.Value.kReverse; }
+	
+	public static void Lower() { LiftState = DoubleSolenoid.Value.kForward; }
+	
+	
 //	public static DoubleSolenoid LiftArms = new DoubleSolenoid(
 //		Ports.PCM_ElevatorArms[0],
 //		Ports.PCM_ElevatorArms[1]
@@ -73,21 +110,33 @@ public class Lift {
 ////		SmartDashboard.putNumber( "FootState",  FootState );
 //	}
 //
-//
-//	public static String Telemetry() {
+//	
+//	public static String TelemetryHead() {
 //		String result = "";
-//		result += "LiftSpeed:" + LiftSpeed + ";";
-//		result += "ArmsState:" + ArmsState + ";";
-//		result += "FootState:" + ArmsState + ";";
+//		result += "LiftSpeed ";
+//		return result;
+//	}
+//
+//	public static String TelemetryData() {
+//		String result = "";
+//		result += LiftSpeed + " ";
+//		return result;
+//	}
+//	
+//	public static String TelemetryData() {
+//		String result = "";
+//		result += "LiftSpeed:" + LiftSpeed + " ";
+//		result += "ArmsState:" + ArmsState + " ";
+//		result += "FootState:" + ArmsState + " ";
 //		return result;
 //	}
 //	
 //	
-////	public static void Reset() {
-////		Height( 0.00 );
-////		Drop();
-////		Pull();
-////	}
+//	public static void Reset() {
+//		Height( 0.00 );
+//		Drop();
+//		Pull();
+//	}
 //	
 //	
 //	public static void Calibrate() {
@@ -123,8 +172,8 @@ public class Lift {
 //
 //		// Linear change in power. Consider making proportional to speedError
 //		powerDelta += 0.0001 * Math.signum(speedError);
-////		if ( speedError < 0 ) { powerDelta = -0.0001; }
-////		if ( speedError > 0 ) { powerDelta = +0.0001; }
+//		if ( speedError < 0 ) { powerDelta = -0.0001; }
+//		if ( speedError > 0 ) { powerDelta = +0.0001; }
 //	
 //		LiftPower += powerDelta;
 //		
@@ -132,5 +181,5 @@ public class Lift {
 //		if ( LiftSwitchMin.get() == true && LiftPower < 0 ) { LiftPower = 0; }
 //		if ( LiftSwitchMax.get() == true && LiftPower > 0 ) { LiftPower = 0; }
 //	}
-//	
+	
 }

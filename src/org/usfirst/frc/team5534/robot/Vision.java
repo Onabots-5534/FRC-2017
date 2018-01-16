@@ -34,18 +34,18 @@ public class Vision {
     
     public static String TelemetryHead() {
     	String result = "";
-    	result += "TargetScore,";
-    	result += "TargetX,";
-    	result += "TargetY,";
+    	result += "TargetScore ";
+    	result += "TargetX ";
+    	result += "TargetY ";
     	return result;
     }
 
     
     public static String TelemetryData() {
     	String result = "";
-    	result += GetTargetScore() + ",";
-    	result += GetTargetX()     + ",";
-    	result += GetTargetY()     + ",";
+    	result += GetTargetScore() + " ";
+    	result += GetTargetX()     + " ";
+    	result += GetTargetY()     + " ";
     	return result;
     }
     
