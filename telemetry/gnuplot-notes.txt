@@ -1,0 +1,9 @@
+set title "Graph Title"
+
+set xrange [0:10]
+set yrange [0:10]
+set autoscale
+
+plot "filename1" using 1:2 with lines title 'Force', "filename2" using 1:3 with lines title 'Beam'
+
+set datafile seperator ";"
