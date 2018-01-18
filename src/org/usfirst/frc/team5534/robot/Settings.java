@@ -3,7 +3,8 @@ package org.usfirst.frc.team5534.robot;
 public class Settings {
 
 	public static final double ClimbPower = 1.00;
-	
+
+	public static final double ClawPower  = 1.00;
 
 	public static final double CameraPixelsPerDegree = 14;
 	public static final double CameraCenterX = 320;

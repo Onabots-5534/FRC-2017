@@ -31,9 +31,9 @@ public class Ports {
 	
 //	public static final int   PWM_LiftMotor     = 0;
 
-//	public static final int   PWM_ClawMotorL    = 0;
-//	public static final int   PWM_ClawMotorR    = 0;
-		
+	public static final int   PWM_ClawMotorL    = 6;
+	public static final int   PWM_ClawMotorR    = 7;
+
 	
 	public static final int   USB_DriveStickL   = 0;
 //	public static final int   USB_DriveStickR   = 1;

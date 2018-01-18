@@ -17,6 +17,7 @@ public class Telemetry {
 	public static void Init() {
 		if ( pw != null ) {
 			String result = "Timestamp ";
+			result += Claw.TelemetryHead();
 			result += Drivetrain.TelemetryHead();
 			result += Navigation.TelemetryHead();
 			result += Stage.TelemetryHead();
@@ -31,7 +32,7 @@ public class Telemetry {
 			
 			String result = Timestamp();
 
-//			result += Claw.Telemetry();
+			result += Claw.TelemetryData();
 //			result += Climber.Telemetry();
 			result += Drivetrain.TelemetryData();
 //			result += Lift.Telemetry();
