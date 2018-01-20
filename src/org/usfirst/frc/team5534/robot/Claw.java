@@ -44,48 +44,8 @@ public class Claw {
 	
 	public static void Stop() { ClawPower = 0; }
 	
-	public static void Suck() { ClawPower = -Settings.ClawPower; }
+	public static void Pull() { ClawPower = -Settings.ClawPower; }
 	
-	public static void Spit() { ClawPower = +Settings.ClawPower; }
-	
-	
-//	public static Spark ClawMotorL = new Spark( Ports.PWM_ClawMotorL );
-//	public static Spark ClawMotorR = new Spark( Ports.PWM_ClawMotorR );
-//
-//	public static DigitalInput ClawSwitch = new DigitalInput( Ports.DIO_ClawSwitch );
-//	
-//	public static double ClawPower = 0;
-//
-//
-//	public static void Init() {
-//	
-//	}
-//
-//
-//	public static void Periodic() {
-//		
-//	}
-//	
-//	
-//	public static void Dashboard() {
-//		SmartDashboard.putNumber( "ClawPower", ClawPower );
-//	}
-//	
-//	
-//	public static String Telemetry() {
-//		String result = "";
-//		result += "ClawPower:" + ClawPower + ";";
-//		return result;
-//	}
-//	
-//	
-//	public static void Pull() {
-//		
-//	}
-//	
-//	
-//	public static void Push( ) {
-//		
-//	}
+	public static void Push() { ClawPower = +Settings.ClawPower; }
 	
 }

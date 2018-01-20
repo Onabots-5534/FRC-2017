@@ -12,14 +12,16 @@ public class Dashboard {
 		SmartDashboard.putNumber( "Time", System.currentTimeMillis() );
 		
 		Chooser.Dashboard();
+		
+		Claw.Periodic();
 
-//		Climber.Dashboard();
+		Climber.Dashboard();
 
 		Drivetrain.Dashboard();
 
 //		Field.Dashboard();
 
-//		Lift.Dashboard();
+		Lift.Dashboard();
 
 		Navigation.Dashboard();
 		

@@ -4,13 +4,13 @@ public class Onabot {
 
 	public static void Init() {
 
-//		Climber.Init();
+		Climber.Init();
 		
 		Claw.Init();
 		
 		Drivetrain.Init();
 		
-//		Lift.Init();
+		Lift.Init();
 
 		Navigation.Init();
 		
@@ -21,13 +21,13 @@ public class Onabot {
 		
 		Claw.Periodic();
 
-//		Climber.Periodic();
+		Climber.Periodic();
 		
 		Dashboard.Periodic();
 
 		Drivetrain.Periodic();
 
-//		Lift.Periodic();
+		Lift.Periodic();
 		
 		Navigation.Periodic();
 	

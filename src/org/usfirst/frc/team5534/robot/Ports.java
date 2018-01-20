@@ -17,17 +17,16 @@ public class Ports {
 //	public static final int[] PCM_ElevatorArms  = { 0, 1 };
 //	public static final int[] PCM_ElevatorFoot  = { 2, 3 };
 
-	public static final int[] PCM_GearGrab = { 1, 2 };
-	public static final int[] PCM_GearLift = { 3, 4 };
-
+	public static final int[] PCM_CubeGrab = { 1, 2 };
+	public static final int[] PCM_CubeLift = { 3, 4 };
 	
 
+	public static final int   PWM_ClimbMotor    = 0;
+	
 	public static final int   PWM_DriveMotorLF  = 1;
 	public static final int   PWM_DriveMotorLR  = 2;
 	public static final int   PWM_DriveMotorRF  = 3;
 	public static final int   PWM_DriveMotorRR  = 4;
-	
-//	public static final int   PWM_ClimbMotor    = 0;
 	
 //	public static final int   PWM_LiftMotor     = 0;
 

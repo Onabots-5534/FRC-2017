@@ -30,13 +30,11 @@ public class Pilot {
 			Stage.Next();
 		}
 
-		if ( DriveStick.getRawButton(4) ) {
-			Autopilot.DriveStraight( 24 );
-		}
+		if ( DriveStick.getRawButton(4) ) { Autopilot.DriveStraight( 24 ); }
 		
 		
-		if      ( DriveStick.getRawButton(5) ) { Claw.Suck(); }
-		else if ( DriveStick.getRawButton(6) ) { Claw.Spit(); }
+		if      ( DriveStick.getRawButton(5) ) { Claw.Pull(); }
+		else if ( DriveStick.getRawButton(6) ) { Claw.Push(); }
 		else                                   { Claw.Stop(); }
 		
 	} // END STEENSMA

@@ -14,6 +14,8 @@ public class Autonomous {
 		
 		Navigation.Reset();
 		
+		Stage.Init();
+		
 		Telemetry.Open();
 	}
 	
