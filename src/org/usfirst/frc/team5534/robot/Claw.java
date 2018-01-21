@@ -44,8 +44,8 @@ public class Claw {
 	
 	public static void Stop() { ClawPower = 0; }
 	
-	public static void Pull() { ClawPower = -Settings.ClawPower; }
+	public static void Grab() { ClawPower = -Settings.ClawPower; }
 	
-	public static void Push() { ClawPower = +Settings.ClawPower; }
+	public static void Drop() { ClawPower = +Settings.ClawPower; }
 	
 }

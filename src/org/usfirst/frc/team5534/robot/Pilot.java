@@ -33,8 +33,8 @@ public class Pilot {
 		if ( DriveStick.getRawButton(4) ) { Autopilot.DriveStraight( 24 ); }
 		
 		
-		if      ( DriveStick.getRawButton(5) ) { Claw.Pull(); }
-		else if ( DriveStick.getRawButton(6) ) { Claw.Push(); }
+		if      ( DriveStick.getRawButton(5) ) { Claw.Grab(); }
+		else if ( DriveStick.getRawButton(6) ) { Claw.Drop(); }
 		else                                   { Claw.Stop(); }
 		
 	} // END STEENSMA

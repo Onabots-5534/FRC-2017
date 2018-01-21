@@ -11,18 +11,18 @@ public class Field {
 	public static void Periodic() {
 		gameData = DriverStation.getInstance().getGameSpecificMessage();
 	}
-	
-	
+
+
 	public static void Dashboard() {
 		SmartDashboard.putString( "Game Data", gameData );
 	}
 
-	
+
 	public static char Get0() {
 		return gameData.charAt(0);
 	}
-	
-	
+
+
 	public static char Get1() {
 		return gameData.charAt(1);
 	}

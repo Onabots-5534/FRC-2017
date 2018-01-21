@@ -13,8 +13,8 @@ public class Operator {
 		
 		Drivetrain.Stop();
 		
-//		Lift.Grab();
-//		Lift.Pull();
+		Claw.Grab();
+
 //		Lift.Height( 0 );
 		
 		Navigation.Reset();
