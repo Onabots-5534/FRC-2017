@@ -49,8 +49,8 @@ public class Drivetrain {
 
 
 	public static void DriveArcade( double D, double T ) {
-		PowerL = D + T;
-		PowerR = D - T;
+		PowerL = D - T;
+		PowerR = D + T;
 	}
 
 

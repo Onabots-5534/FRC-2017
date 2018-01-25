@@ -21,12 +21,12 @@ public class Ports {
 	public static final int[] PCM_CubeLift = { 3, 4 };
 	
 
-	public static final int   PWM_ClimbMotor    = 0;
+	public static final int   PWM_ClimbMotor    = 5;
 	
-	public static final int   PWM_DriveMotorLF  = 1;
-	public static final int   PWM_DriveMotorLR  = 2;
-	public static final int   PWM_DriveMotorRF  = 3;
-	public static final int   PWM_DriveMotorRR  = 4;
+	public static final int   PWM_DriveMotorLF  = 0;
+	public static final int   PWM_DriveMotorLR  = 1;
+	public static final int   PWM_DriveMotorRF  = 2;
+	public static final int   PWM_DriveMotorRR  = 3;
 	
 //	public static final int   PWM_LiftMotor     = 0;
 
@@ -35,6 +35,7 @@ public class Ports {
 
 	
 	public static final int   USB_DriveStickL   = 0;
-//	public static final int   USB_DriveStickR   = 1;
+	public static final int   USB_DriveStickR   = 1;
+//	public static final int   USB_XBoxStick		= 2;
 	
 }

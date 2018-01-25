@@ -15,18 +15,20 @@ public class Pilot {
 	public static void Steensma() {
 		Joystick DriveStick = Operator.DriveStickL;
 		double PowerD = -DriveStick.getY();
-		double PowerT = +DriveStick.getTwist() / 3;
+		double PowerT = +DriveStick.getX()/3;
 		Drivetrain.DriveArcade( PowerD,  PowerT );
 
 		if ( DriveStick.getRawButton(2) ) {
 			Autopilot.LastHeading = 0;
+			Autopilot.LastPowerD = 0;
+			Autopilot.LastPowerT = 0;
 			Navigation.Reset();
 			Stage.Init();
 		}
 
 		if ( DriveStick.getRawButton(3) ) {
 			Stage.Reset();
-			Track.CrossBaseLine();
+			Track.Testing();
 			Stage.Next();
 		}
 

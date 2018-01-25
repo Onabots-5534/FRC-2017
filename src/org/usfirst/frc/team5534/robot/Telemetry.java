@@ -20,7 +20,7 @@ public class Telemetry {
 			result += Claw.TelemetryHead();
 			result += Climber.TelemetryHead();
 			result += Drivetrain.TelemetryHead();
-			result += Lift.TelemetryHead();
+//			result += Lift.TelemetryHead();
 			result += Navigation.TelemetryHead();
 			result += Stage.TelemetryHead();
 			result += Vision.TelemetryHead();
@@ -37,7 +37,7 @@ public class Telemetry {
 			result += Claw.TelemetryData();
 			result += Climber.TelemetryData();
 			result += Drivetrain.TelemetryData();
-			result += Lift.TelemetryData();
+//			result += Lift.TelemetryData();
 			result += Navigation.TelemetryData();
 			result += Stage.TelemetryData();
 			result += Vision.TelemetryData();

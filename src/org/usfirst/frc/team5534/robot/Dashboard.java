@@ -21,7 +21,7 @@ public class Dashboard {
 
 //		Field.Dashboard();
 
-		Lift.Dashboard();
+//		Lift.Dashboard();
 
 		Navigation.Dashboard();
 		

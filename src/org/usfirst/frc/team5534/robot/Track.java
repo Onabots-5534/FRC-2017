@@ -2,6 +2,23 @@ package org.usfirst.frc.team5534.robot;
 
 public class Track {
 
+	
+	// TESTING. This path is just for testing purposes. Currently it is
+	// tied to a button on the joystick so that we can test different
+	// autonomous routines.
+	public static void Testing() {
+		switch ( Stage.Number ) {
+			case 0:
+				Autopilot.DriveStraight( 12 );
+				Stage.StopBeyondForwardDistance( 30 * 12 );
+				break;
+				
+			default:
+				Stage.Last();
+				break;
+		}
+	}
+	
 
 	// CROSS BASELINE. Just cross the baseline. This is a fall-back mode
 	// in case of something unexpected such as not receiving data from the
