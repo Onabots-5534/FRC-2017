@@ -8,16 +8,21 @@ public class Pilot {
 		Joystick DriveStick = Operator.DriveStickL;
 		double PowerD = -DriveStick.getY();
 		double PowerT = +DriveStick.getTwist();
-		Drivetrain.DriveArcade( PowerD,  PowerT );
+		Drivetrain.DriveByArcade( PowerD,  PowerT );
 	} // END GALVEZ
 
 	
 	public static void Steensma() {
 		Joystick DriveStick = Operator.DriveStickL;
 		double PowerD = -DriveStick.getY();
-		double PowerT = +DriveStick.getX()/3;
-		Drivetrain.DriveArcade( PowerD,  PowerT );
+		double PowerT = -DriveStick.getTwist();
+		Drivetrain.DriveByArcade( PowerD,  PowerT );
 
+		if ( DriveStick.getTrigger() ) {
+			PowerD *= -1;
+			PowerT *= -1;
+		}
+		
 		if ( DriveStick.getRawButton(2) ) {
 			Autopilot.LastHeading = 0;
 			Autopilot.LastPowerD = 0;

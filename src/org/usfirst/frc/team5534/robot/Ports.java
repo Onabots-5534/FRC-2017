@@ -36,6 +36,6 @@ public class Ports {
 	
 	public static final int   USB_DriveStickL   = 0;
 	public static final int   USB_DriveStickR   = 1;
-//	public static final int   USB_XBoxStick		= 2;
+	public static final int   USB_XBoxStick		= 2;
 	
 }

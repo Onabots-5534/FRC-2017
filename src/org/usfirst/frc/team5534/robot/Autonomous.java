@@ -7,16 +7,17 @@ public class Autonomous {
 //		Climber.Stop();
 		
 		Drivetrain.Stop();
-		
+
 //		Lift.Grab();
 //		Lift.Pull();
 //		Lift.Height( 0 );
-		
+
 		Navigation.Reset();
-		
+
 		Stage.Init();
-		
+
 		Telemetry.Open();
+
 	}
 	
 	

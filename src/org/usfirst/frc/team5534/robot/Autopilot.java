@@ -37,16 +37,16 @@ public class Autopilot {
 	public static void AdjustToFrontRange( double Range ) {
 		double error = Navigation.GetFrontRange() - Range;
 		double speed = error;
-		if ( error < 0 ) { speed = Math.max( speed, -30 ); } // Maximum speed
-		if ( error > 0 ) { speed = Math.min( speed, +30 ); } // of 30 in/sec
+		if ( error < 0 ) { speed = Math.min( speed, -30 ); } // Maximum speed
+		if ( error > 0 ) { speed = Math.max( speed, +30 ); } // of 30 in/sec
 		AdjustDriveSpeed( speed );
 	}
 	
 	public static void AdjustToHeading( double Heading ) {
 		double error = Navigation.GetDelta( Heading );
 		double speed = error;
-		if ( error < 0 ) { speed = Math.max( speed, -30 ); } // Maximum speed
-		if ( error > 0 ) { speed = Math.min( speed, +30 ); } // of 30 deg/sec
+		if ( error < 0 ) { speed = Math.min( speed, -30 ); } // Maximum speed
+		if ( error > 0 ) { speed = Math.max( speed, +30 ); } // of 30 deg/sec
 		LastHeading = Heading;
 		AdjustTurnSpeed( error );
 	}
@@ -54,8 +54,8 @@ public class Autopilot {
 	public static void AdjustToTarget() {
 		double error = Vision.GetTargetX() / Settings.CameraPixelsPerDegree;
 		double speed = error;
-		if ( error < 0 ) { speed = Math.max( speed, -30 ); } // Maximum speed
-		if ( error > 0 ) { speed = Math.min( speed, +30 ); } // of 30 deg/sec
+		if ( error < 0 ) { speed = Math.min( speed, -30 ); } // Maximum speed
+		if ( error > 0 ) { speed = Math.max( speed, +30 ); } // of 30 deg/sec
 		LastHeading = Navigation.GetDirection() + error;
 		AdjustTurnSpeed( error );
 	}
@@ -66,42 +66,42 @@ public class Autopilot {
 		AdjustDriveSpeed( Speed );
 		AdjustToHeading( LastHeading );
 		MinimumDrivePower();
-		Drivetrain.DriveArcade( LastPowerD, LastPowerT );
+		Drivetrain.DriveByArcade( LastPowerD, LastPowerT );
 	}
 
 	public static void DriveToSurface( double Range ) {
 		AdjustToFrontRange( Range );
 		AdjustToHeading( LastHeading );
 		MinimumDrivePower();
-		Drivetrain.DriveArcade( LastPowerD, LastPowerT );
+		Drivetrain.DriveByArcade( LastPowerD, LastPowerT );
 	}
 
 	public static void DriveToTarget() {
 		AdjustToFrontRange( 10 );
 		AdjustToTarget();
 		MinimumDrivePower();
-		Drivetrain.DriveArcade( LastPowerD, LastPowerT );
+		Drivetrain.DriveByArcade( LastPowerD, LastPowerT );
 	}
 
 	public static void TurnToHeading( double Heading ) {
 		LastPowerD = 0;
 		AdjustToHeading( Heading );
 		MinimumTurnPower();
-		Drivetrain.DriveArcade( LastPowerD, LastPowerT );
+		Drivetrain.DriveByArcade( LastPowerD, LastPowerT );
 	}
 
 	public static void TurnToTarget() {
 		LastPowerD = 0;
 		AdjustToTarget();
 		MinimumTurnPower();
-		Drivetrain.DriveArcade( LastPowerD,  LastPowerT );
+		Drivetrain.DriveByArcade( LastPowerD,  LastPowerT );
 	}
 	
 	public static void TurnAtSpeed( double Speed ) {
 		LastPowerD = 0;
 		AdjustTurnSpeed( Speed );
 		MinimumTurnPower();
-		Drivetrain.DriveArcade( LastPowerD, LastPowerT );
+		Drivetrain.DriveByArcade( LastPowerD, LastPowerT );
 	}
 	
 }

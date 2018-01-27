@@ -4,15 +4,19 @@ public class Onabot {
 
 	public static void Init() {
 
+		Claw.Init();
+		
 		Climber.Init();
 		
-		Claw.Init();
+		Dashboard.Init();
 		
 		Drivetrain.Init();
 		
 //		Lift.Init();
 
 		Navigation.Init();
+		
+		Telemetry.Init();
 		
 		Vision.Init();
 
@@ -34,6 +38,8 @@ public class Onabot {
 		Navigation.Periodic();
 	
 		Telemetry.Periodic();
+		
+		Vision.Periodic();
 		
 	}
 	

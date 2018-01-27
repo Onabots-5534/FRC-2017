@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.31)  12 JAN 2018 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.31)  24 JAN 2018 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,8 +1425,8 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip277
 )
 \ChpNumBox=\box89
-)
-No file Onabots-5534.aux.
+) (./Onabots-5534.aux
+(./chapter/configure.aux) (./chapter/eclipse.aux) (./include/robot-code.aux))
 \openout1 = `Onabots-5534.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -1445,6 +1445,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 21.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 21.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
@@ -1559,6 +1560,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
+(./Onabots-5534.out) (./Onabots-5534.out)
 \@outlinefile=\write4
 \openout4 = `Onabots-5534.out'.
 
@@ -1616,7 +1618,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
  []
 
-[1
+(./Onabots-5534.toc
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
+) [1
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1651,8 +1656,6 @@ Overfull \hbox (15.23285pt too wide) in paragraph at lines 7--8
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 32.
 
 Overfull \hbox (81.9198pt too wide) in paragraph at lines 31--40
 [][]
@@ -1721,7 +1724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--48
 
  []
 
-[11] <images/ni_roborio.jpg, id=88, 521.95pt x 511.9125pt>
+[11] <images/ni_roborio.jpg, id=134, 521.95pt x 511.9125pt>
 File: images/ni_roborio.jpg Graphic file (type jpg)
 
 <use images/ni_roborio.jpg>
@@ -1738,7 +1741,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./images/ni_roborio.jpg>] <images/spark.png, id=94, 70.664pt x 80.3pt>
+[12 <./images/ni_roborio.jpg>] <images/spark.png, id=141, 70.664pt x 80.3pt>
 File: images/spark.png Graphic file (type png)
 
 <use images/spark.png>
@@ -1764,7 +1767,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] <images/encoder-amt103.jpeg, id=119, 225.84375pt x 225.84375pt>
+[14] <images/encoder-amt103.jpeg, id=166, 225.84375pt x 225.84375pt>
 File: images/encoder-amt103.jpeg Graphic file (type jpg)
 
 <use images/encoder-amt103.jpeg>
@@ -1878,36 +1881,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23] (../src/org/usfirst/frc/team5534/robot/Climber.java)
+[23] (../src/org/usfirst/frc/team5534/robot/Claw.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] (../src/org/usfirst/frc/team5534/robot/Dashboard.java
-Overfull \hbox (18.14055pt too wide) in paragraph at lines 11--12
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (35.03667pt too wide) in paragraph at lines 12--13
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (47.70872pt too wide) in paragraph at lines 35--36
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-)
+[24] (../src/org/usfirst/frc/team5534/robot/Climber.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] (../src/org/usfirst/frc/team5534/robot/DigitBoard.java
+[25] (../src/org/usfirst/frc/team5534/robot/Dashboard.java)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26] (../src/org/usfirst/frc/team5534/robot/DigitBoard.java
 Overfull \hbox (47.70876pt too wide) in paragraph at lines 30--31
 [][][][][][][][][][][][][][][][][][][][]
  []
@@ -1934,37 +1929,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 20.39996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [27]
-Overfull \hbox (81.50099pt too wide) in paragraph at lines 136--137
+Overfull \hbox (81.50099pt too wide) in paragraph at lines 130--131
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][] 
  []
 
 
-Overfull \hbox (280.03038pt too wide) in paragraph at lines 138--139
+Overfull \hbox (280.03038pt too wide) in paragraph at lines 132--133
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1.24443pt too wide) in paragraph at lines 194--195
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (195.54979pt too wide) in paragraph at lines 198--199
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][] 
  []
 
 
@@ -1978,20 +1952,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
-Overfull \hbox (43.48473pt too wide) in paragraph at lines 206--208
+Overfull \hbox (1.24443pt too wide) in paragraph at lines 186--187
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (195.54979pt too wide) in paragraph at lines 190--191
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (43.48473pt too wide) in paragraph at lines 198--200
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
- []
-
-
-Overfull \hbox (284.25441pt too wide) in paragraph at lines 233--234
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (5.46846pt too wide) in paragraph at lines 254--255
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
@@ -2005,6 +1979,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29]
+Overfull \hbox (284.25441pt too wide) in paragraph at lines 225--226
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.46846pt too wide) in paragraph at lines 247--248
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2014,35 +1999,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30])
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] (../src/org/usfirst/frc/team5534/robot/Disabled.java)
+[31])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] (../src/org/usfirst/frc/team5534/robot/Drivetrain.java)
+[32] (../src/org/usfirst/frc/team5534/robot/Disabled.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33] (../src/org/usfirst/frc/team5534/robot/Field.java)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 20.39996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34] (../src/org/usfirst/frc/team5534/robot/Lift.java
+[33] (../src/org/usfirst/frc/team5534/robot/Drivetrain.java
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
@@ -2052,22 +2033,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
-Overfull \hbox (18.14055pt too wide) in paragraph at lines 113--114
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-)
+[34])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] (../src/org/usfirst/frc/team5534/robot/Navigation.java
-Overfull \hbox (39.2607pt too wide) in paragraph at lines 12--13
-[][][][][][][][][][][][][][][][][][][][] 
+[35] (../src/org/usfirst/frc/team5534/robot/Field.java)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36] (../src/org/usfirst/frc/team5534/robot/Lift.java)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37] (../src/org/usfirst/frc/team5534/robot/Navigation.java
+Overfull \hbox (39.26067pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
@@ -2085,69 +2074,66 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37])
+[38])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38] (../src/org/usfirst/frc/team5534/robot/Onabot.java)
+[39] (../src/org/usfirst/frc/team5534/robot/Onabot.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39] (../src/org/usfirst/frc/team5534/robot/Operator.java)
+[40] (../src/org/usfirst/frc/team5534/robot/Operator.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40] (../src/org/usfirst/frc/team5534/robot/Pilot.java
-Overfull \hbox (22.36458pt too wide) in paragraph at lines 32--34
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
-)
+[41] (../src/org/usfirst/frc/team5534/robot/Pilot.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41] (../src/org/usfirst/frc/team5534/robot/Ports.java)
+[42] (../src/org/usfirst/frc/team5534/robot/Ports.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42] (../src/org/usfirst/frc/team5534/robot/Prefs.java)
+[43] (../src/org/usfirst/frc/team5534/robot/Prefs.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43] (../src/org/usfirst/frc/team5534/robot/Robot.java)
+[44] (../src/org/usfirst/frc/team5534/robot/Robot.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44] (../src/org/usfirst/frc/team5534/robot/Settings.java)
+[45] (../src/org/usfirst/frc/team5534/robot/Settings.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45] (../src/org/usfirst/frc/team5534/robot/Stage.java
+[46] (../src/org/usfirst/frc/team5534/robot/Stage.java
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
@@ -2157,26 +2143,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]
-Overfull \hbox (81.50099pt too wide) in paragraph at lines 92--93
+[47]
+Overfull \hbox (81.50099pt too wide) in paragraph at lines 100--101
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ] 
  []
 
 
-Overfull \hbox (81.50099pt too wide) in paragraph at lines 99--100
+Overfull \hbox (81.50096pt too wide) in paragraph at lines 107--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (64.60487pt too wide) in paragraph at lines 119--120
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ] 
  []
 
 
-Overfull \hbox (64.60487pt too wide) in paragraph at lines 111--112
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-
-Overfull \hbox (26.58861pt too wide) in paragraph at lines 118--119
+Overfull \hbox (26.58861pt too wide) in paragraph at lines 126--127
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -2187,28 +2173,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47] (../src/org/usfirst/frc/team5534/robot/Station.java)
+[48] (../src/org/usfirst/frc/team5534/robot/Station.java)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48] (../src/org/usfirst/frc/team5534/robot/Telemetry.java)
+[49] (../src/org/usfirst/frc/team5534/robot/Telemetry.java
+Overfull \hbox (56.15678pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 20.39996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[49] (../src/org/usfirst/frc/team5534/robot/Test.java)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 20.39996pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[50] (../src/org/usfirst/frc/team5534/robot/Track.java
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
@@ -2218,18 +2196,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[50])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[51] (../src/org/usfirst/frc/team5534/robot/Test.java)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52] (../src/org/usfirst/frc/team5534/robot/Track.java
+Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
 
@@ -2248,29 +2230,59 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54])
+[54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55] (../src/org/usfirst/frc/team5534/robot/Vision.java))
+[55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 20.39996pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56]
+[56])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57] (../src/org/usfirst/frc/team5534/robot/Vision.java
+Underfull \vbox (badness 5374) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58]))
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 20.39996pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59] [60
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 161--161
 
  []
 
-[57
-
-
-]
+[61]
 \tf@toc=\write5
 \openout5 = `Onabots-5534.toc'.
 
@@ -2280,25 +2292,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
 (./include/robot-code.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
-
-
-Package rerunfilecheck Warning: File `Onabots-5534.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Onabots-5534.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  BFEBC8AA853A2FDE0187DD7F8AC81786;506.
+Package rerunfilecheck Info: File `Onabots-5534.out' has not changed.
+(rerunfilecheck)             Checksum: BFEBC8AA853A2FDE0187DD7F8AC81786;506.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 33355 strings out of 493013
- 591244 string characters out of 6135682
- 790153 words of memory out of 5000000
- 34518 multiletter control sequences out of 15000+600000
+ 33470 strings out of 493013
+ 593196 string characters out of 6135682
+ 793852 words of memory out of 5000000
+ 34516 multiletter control sequences out of 15000+600000
  109438 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,73p,10391b,2170s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,12n,73p,10391b,2170s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/fourier/fourier-orns.pfb></usr/share/texlive/texmf-di
@@ -2306,10 +2311,10 @@ st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
 ia/putri8a.pfb>
-Output written on Onabots-5534.pdf (57 pages, 333202 bytes).
+Output written on Onabots-5534.pdf (61 pages, 342114 bytes).
 PDF statistics:
- 2566 PDF objects out of 2984 (max. 8388607)
- 2473 compressed objects within 25 object streams
- 1935 named destinations out of 2073 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2743 PDF objects out of 2984 (max. 8388607)
+ 2644 compressed objects within 27 object streams
+ 2035 named destinations out of 2073 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

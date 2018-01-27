@@ -48,13 +48,13 @@ public class Drivetrain {
 	}
 
 
-	public static void DriveArcade( double D, double T ) {
+	public static void DriveByArcade( double D, double T ) {
 		PowerL = D - T;
 		PowerR = D + T;
 	}
 
 
-	public static void DriveTank( double L, double R ) {
+	public static void DriveByTank( double L, double R ) {
 		PowerL = L;
 		PowerR = R;
 	}

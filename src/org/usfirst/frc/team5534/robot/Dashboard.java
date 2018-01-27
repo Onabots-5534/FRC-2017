@@ -10,9 +10,9 @@ public class Dashboard {
 	public static void Periodic() {
 
 		SmartDashboard.putNumber( "Time", System.currentTimeMillis() );
-		
+
 		Chooser.Dashboard();
-		
+
 		Claw.Periodic();
 
 		Climber.Dashboard();
@@ -24,8 +24,9 @@ public class Dashboard {
 //		Lift.Dashboard();
 
 		Navigation.Dashboard();
-		
+
 		Stage.Dashboard();
+
 	}
 
 }
